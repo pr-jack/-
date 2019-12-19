@@ -1,0 +1,44 @@
+.page-header__top {
+  height: 50px;
+  font-family: "DaxlinePro-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 120%;
+  background: #ECECEC;
+
+  &--wrapper {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 1281px;
+  }
+
+  &--user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 155px;
+  }
+
+  &--login, &--registration {
+    border-bottom: 1px solid #A6A7B1;
+  }
+
+  &--link {
+    color: #A6A7B1;
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  padding-top: 7px;
+  padding-right: 2px;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__item {
+  padding-left: 10px;
+}

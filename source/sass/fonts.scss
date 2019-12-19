@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "DaxlinePro-Regular";
+  src: url("../fonts/DaxlinePro-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/DaxlinePro-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/DaxlinePro-Regular.woff2") format("woff2"), /* Pretty Modern Browsers */
+       url("../fonts/DaxlinePro-Regular.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/DaxlinePro-Regular.ttf")  format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/DaxlinePro-Regular.svg") format("svg"); /* Legacy iOS */
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
