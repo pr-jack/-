@@ -382,6 +382,16 @@ h2 {
   background: none;
   outline: none; }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1281px; }
+
 @font-face {
   font-family: "DaxlinePro-Regular";
   src: url("../fonts/DaxlinePro-Regular.eot");
@@ -398,15 +408,6 @@ h2 {
   font-size: 14px;
   line-height: 120%;
   background: #ECECEC; }
-  .page-header__top--wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0 auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 1281px; }
   .page-header__top--user {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -440,3 +441,29 @@ h2 {
 
 .social__item {
   padding-left: 10px; }
+
+.page-header__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .page-header__title--description {
+    width: 268px;
+    font-family: "DaxlinePro-Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    color: #A6A7B1; }
+
+.call-button__button {
+  width: 188px;
+  border: 3px solid #E33439;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "DaxlinePro-Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+  color: #323232;
+  background: none; }
