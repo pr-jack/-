@@ -19,6 +19,9 @@ ul {
   padding: 0;
   list-style: none; }
 
+p {
+  margin: 0; }
+
 /* HTML5 display definitions
    ========================================================================== */
 /**
@@ -402,11 +405,21 @@ h2 {
   font-style: normal;
   font-display: swap; }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Roboto.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto.woff2") format("woff2"), url("../fonts/Roboto.woff") format("woff"), url("../fonts/Roboto.ttf") format("truetype"), url("../fonts/Roboto.svg") format("svg");
+  /* Legacy iOS */
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
 .page-header__top {
   height: 50px;
   font-family: "DaxlinePro-Regular", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 120%;
+  line-height: 19px;
   background: #ECECEC; }
   .page-header__top--user {
     display: -webkit-box;
@@ -446,16 +459,43 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .page-header__title--wrapper {
+    padding-top: 33px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .page-header__title--logo {
+    margin-right: 50px; }
   .page-header__title--description {
+    margin-right: 56px;
     width: 268px;
     font-family: "DaxlinePro-Regular", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 120%;
+    line-height: 19px;
     color: #A6A7B1; }
+  .page-header__title--description-image {
+    vertical-align: text-bottom; }
+  .page-header__title--call {
+    margin-right: 26px; }
+  .page-header__title--phone {
+    margin-right: 139px;
+    width: 195px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.3px;
+    color: #323232; }
+  .page-header__title--cart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .call-button__button {
+  padding: 13px;
   width: 188px;
   border: 3px solid #E33439;
   -webkit-box-sizing: border-box;
@@ -464,6 +504,20 @@ h2 {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 120%;
+  line-height: 19px;
   color: #323232;
   background: none; }
+
+.cart__image {
+  margin-right: 17px; }
+
+.cart__order {
+  margin-top: 9px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px; }
+  .cart__order--link {
+    text-decoration: underline;
+    color: #E33439; }

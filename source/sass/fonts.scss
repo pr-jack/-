@@ -10,3 +10,16 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Roboto.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Roboto.woff2") format("woff2"), /* Pretty Modern Browsers */
+       url("../fonts/Roboto.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Roboto.ttf")  format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/Roboto.svg") format("svg"); /* Legacy iOS */
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

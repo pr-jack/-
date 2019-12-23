@@ -2,7 +2,7 @@
   height: 50px;
   font-family: $font-primary;
   font-size: 14px;
-  line-height: 120%;
+  line-height: 19px;
   background: #ECECEC;
 
   &--user {
@@ -39,18 +39,53 @@
 .page-header__title {
   display: flex;
 
+  &--wrapper {
+    padding-top: 33px;
+    align-items: center;
+  }
+
+  &--logo {
+    margin-right: 50px;
+  }
+
   &--description {
+    margin-right: 56px;
     width: 268px;
     font-family: $font-primary;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 120%;
+    line-height: 19px;
     color: #A6A7B1;
+  }
+
+  &--description-image {
+    vertical-align: text-bottom;
+  }
+
+  &--call {
+    margin-right: 26px;
+  }
+
+  &--phone {
+    margin-right: 139px;
+    width: 195px;
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.3px;
+    color: #323232;
+  }
+
+  &--cart {
+    display: flex;
   }
 }
 
 .call-button__button {
+  padding: 13px;
   width: 188px;
   border: 3px solid #E33439;
   box-sizing: border-box;
@@ -58,7 +93,24 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 120%;
+  line-height: 19px;
   color: #323232;
   background: none;
+}
+
+.cart__image {
+  margin-right: 17px;
+}
+
+.cart__order {margin-top: 9px;
+  font-family: $font-secondary;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  &--link {
+    text-decoration: underline;
+    color: #E33439;
+  }
 }
