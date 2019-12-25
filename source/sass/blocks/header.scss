@@ -103,7 +103,8 @@
   margin-right: 17px;
 }
 
-.cart__order {margin-top: 9px;
+.cart__order {
+  margin-top: 9px;
   font-family: $font-secondary;
   font-style: normal;
   font-weight: normal;
@@ -133,7 +134,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 16px;
   text-transform: uppercase;
 }
 
@@ -144,6 +145,17 @@
 
   &--list {
     text-align: center;
+  }
+
+  &--list::before {
+    position: absolute;
+    content: "";
+    top: 31px;
+    right: 30px;
+    width: 12px;
+    height: 10px;
+    background: url('../img/arrow.png');
+    background-repeat: no-repeat;
   }
 
   &--list:hover {
@@ -157,10 +169,14 @@
 
 .site-list__link {
   width: 100%;
-  color: #ffffff;
+  color: #F9FAFE;
 
   &--active {
     color: #FAACAE;
+  }
+
+  &--list {
+    line-height: 70px;
   }
 
   &--list:hover {
@@ -172,14 +188,13 @@
 
 .main-nav__sub-list {
   display: none;
-  padding-bottom: 50px;
   text-align: left;
   text-transform: none;
   background: #C22A2E;
 }
 
 .sub-list__item {
-  padding-left: 51px;
+  padding-left: 38px;
 }
 
 .site-list__item:hover .main-nav__sub-list {
@@ -187,4 +202,88 @@
   position: absolute;
   width: 100%;
   left: 0;
+}
+
+.sub-list__link {
+  width: 100%;
+  line-height: 40px;
+  color: #F9FAFE;
+}
+
+.sub-list__item:hover {
+  background: #E33439;
+}
+
+.page-header__intro {
+  padding-bottom: 47px;
+}
+
+.intro-block__picture {
+  justify-content: normal;
+  padding-top: 25px;
+  padding-left: 47px;
+
+  &--image {
+    padding-right: 140px;
+  }
+}
+
+.intro-block__title {
+  padding-top: 12px;
+  padding-left: 25px;
+  justify-content: normal;
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 40px;
+
+  &--text {
+    text-transform: uppercase;
+  }
+
+  &--text img {
+    vertical-align: text-bottom;
+  }
+}
+
+.rootform {
+  padding-right: 80px;
+  color: #9EBF56;
+}
+
+.compressive {
+  padding-right: 59px;
+  color: #B0B0B0;
+
+  &--ms {
+    padding-right: 45px;
+    color: #E2C058;
+  }
+
+  &--m {
+    padding-right: 30px;
+  }
+
+  &--mp {
+    padding-right: 38px;
+  }
+
+  &--m, &--mp {
+    color: #C0568A;
+  }
+
+  &--s {
+    padding-right: 73px;
+    color: #B0B0B0;
+  }
+}
+
+.basal {
+  padding-right: 98px;
+  color: #6FBBCF;
+
+  &--ss {
+    color: #6FBBCF;
+  }
 }
