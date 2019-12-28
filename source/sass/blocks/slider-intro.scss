@@ -1,0 +1,125 @@
+.slider-intro {
+  position: relative;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide__image {
+  max-width: 100%;
+}
+
+.swiper-button-prev {
+  background-image: url("../img/arrow-slider-prev.png");
+  background-repeat: no-repeat;
+  left: 11.4%;
+
+  &::after {
+    content: "";
+  }
+}
+
+.swiper-button-next {
+  background-image: url("../img/arrow-slider-next.png");
+  background-repeat: no-repeat;
+  right: 11.2%;
+
+  &::after {
+    content: "";
+  }
+}
+
+.swiper-button-disabled {
+  opacity: 1 !important;
+}
+
+.swiper-pagination {
+  width: 1281px !important;
+  margin-left: 16%;
+  left: 9px !important;
+  text-align: left;
+  bottom: 58px !important;
+}
+
+.swiper-pagination-bullet {
+  margin: 0 5px !important;
+  width: 18px;
+  height: 18px;
+  background: #FFFFFF;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: #E33439;
+  opacity: 1;
+}
+
+.slider-block {
+  position: absolute;
+  top: 15.6%;
+  left: 16.5%;
+  z-index: 10;
+  font-family: $font-primary;
+  text-align: left;
+  color: #323232;
+}
+
+.slider-block__title {
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 140%;
+  padding-bottom: 4%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 93px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: #E33439;
+  }
+}
+
+.slider-block__description {
+  width: 256px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  padding-bottom: 20%;
+}
+
+.slider-block__button {
+  padding: 11px;
+  width: 134px;
+  border: 3px solid #e33439;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+  background: none;
+}
